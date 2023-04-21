@@ -1,0 +1,51 @@
+.cta {
+	position: relative;
+
+	padding: 83px 0 84px;
+	
+	@include bgImage("./../img/bg/cta.jpg");
+
+	&::before {
+		@extend %overlay;
+	}
+
+	&__content {
+		position: relative;
+
+		text-align: center;
+		color: #fff;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 1;
+
+			& span {
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
+		@media (max-width: 899px) {
+			margin-bottom: 30px;
+			font-size: 20px;
+		}
+
+		@media (max-width: 599px) {
+			margin-bottom: 18px;
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 1199px) {
+		padding: 42px 0 39px
+	}	
+
+	@media (max-width: 899px) {
+		.button {
+			width: 230px;
+		}
+	}
+}

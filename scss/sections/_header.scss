@@ -1,0 +1,140 @@
+.header { 
+	position: relative;
+	
+	@include bgImage("./../img/bg/header.jpg");
+
+	color: #fff;
+
+		&::before{
+			@extend %overlay;
+		}
+
+		&__wrapper {
+			position: relative;
+			height: 100%;
+			padding: 60px 0px 100px;
+
+				@media (max-width: 1199px) {
+						padding-bottom: 50px;
+				}
+
+				@media (max-width: 899px) {
+					padding-top: 20px;
+				}
+
+				@media (max-width: 599px) {
+					padding-bottom: 40px;
+				}
+		}
+
+		&__btns {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 130px;
+
+				@media (max-width: 1199px) {
+					margin-bottom: 90px;
+					width: 100%;
+				}
+
+				@media (max-width: 899px) {
+					margin-bottom: 22px;
+				}
+
+				@media (max-width: 599px) {
+					padding: 0 17px;
+				}
+		}
+
+		&__content {
+			margin-bottom: 103px;
+			padding-bottom: 45px;
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+				@media (max-width: 1199px) {
+					margin-bottom: 85px;
+				}
+
+				@media (max-width: 899px) {
+					margin-bottom: 36px;
+				}
+
+				@media (max-width: 599px) {
+					margin-bottom: 6px;
+				}
+		}
+
+		&__title{
+			margin-bottom: 30px;
+			
+			text-align: center;
+			font-size: 96px;
+
+				@media (max-width: 1199px) {
+					margin-bottom: 27px;
+
+					font-size: 84px;
+				}
+
+				@media (max-width: 899px) {
+					margin-bottom: 24px;
+
+					font-size: 70px;
+				}		
+		}
+
+		&__desc {
+			margin: 0px 0px 70px 0px;
+
+			max-width: 730px;
+			font-size: 20px;
+			line-height: 1.2;
+			text-align: center;
+
+				@media (max-width: 1199px) {
+					margin-bottom: 50px;
+
+					font-size: 18px;				
+				}
+
+				@media (max-width: 899px) {
+					width: 430px;
+
+					font-size: 16px;
+				}
+
+				@media (max-width: 599px) {
+					margin-bottom: 30px;
+					width: 305px;
+				}
+
+				& p:not(:last-child) {
+					margin-top: 15px;
+				}
+		}
+
+		&__form {
+			display: flex;
+			justify-content: center;
+			column-gap: 20px;
+
+			@media (max-width: 899px) {
+				flex-direction: column;
+				align-items: center;
+				row-gap: 20px;
+			}
+		}
+
+		&__scroll {
+			display: flex;
+			justify-content: center;
+
+				& a {
+					display: block;
+				}
+		}
+}	
+

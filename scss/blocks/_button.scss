@@ -1,0 +1,32 @@
+.button {
+	width: 241px;
+	height: 60px;
+
+	background-color: #00C470;
+	border-radius: 30px;
+
+	font-weight: 800;
+	font-size: 14px;
+	color: #fff;
+	line-height: 60px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+
+	transition: .3s ease;
+
+		&:hover {
+			background-color: #00b466;
+		}
+		
+		&:focus {
+			background-color: #00a55d;
+		}
+
+		@media (max-width: 899px) {
+			width: 370px;
+		}
+
+		@media (max-width: 599px) {
+			width: 290px;
+		}
+}

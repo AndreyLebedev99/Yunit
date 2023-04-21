@@ -1,0 +1,74 @@
+.price {
+	position: relative;
+
+	padding: 90px 0 100px;
+
+	@include bgImage("./../img/bg/price.jpg");
+
+		&::before{
+			@extend %overlay;
+		}
+
+	&__content {
+		position: relative;
+
+		@media (max-width: 1199px) {
+			
+		}
+	}
+
+	&__header {
+		margin-bottom: 80px;
+
+		color: #fff;
+		text-align: center;
+
+			& .title {
+				color: #fff;
+			}
+
+		@media (max-width: 1199px) {
+			margin-bottom: 50px;	
+		}
+
+		@media (max-width: 899px) {
+			margin-bottom: 40px;	
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		@media (max-width: 1199px) {
+			margin-bottom: 20px;	
+		}
+
+		@media (max-width: 599px) {
+			margin-bottom: 10px;	
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		column-gap: 30px;
+
+		@media (max-width: 899px) {
+			flex-direction: column;
+			align-items: center;	
+			row-gap: 30px;
+		}
+	}
+
+	@media (max-width: 1199px) {
+		padding: 50px 0;
+	}
+
+	@media (max-width: 899px) {
+		padding-bottom: 43px;
+	}
+
+	@media (max-width: 599px) {
+		padding: 40px 0;
+	}
+}

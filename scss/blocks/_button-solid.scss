@@ -1,0 +1,29 @@
+.button-solid {
+	display: inline-block;
+	padding: 0 37px;
+	height: 60px;
+
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	background-color: #fff;
+
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 60px;
+	letter-spacing: 4px;
+	color: $textColot;
+	text-transform: uppercase;
+
+	transition: .3s ease;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 1);
+		border: 1px solid rgba(255, 255, 255, 0);
+		color: #fff;
+	}
+	
+	&:focus {
+		background-color: rgb(0, 0, 0);
+		color: #fff;
+	}
+}

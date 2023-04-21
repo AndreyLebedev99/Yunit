@@ -1,0 +1,16 @@
+@mixin bgImage ($name) {
+	background-image: url($name);
+	background-size: cover;
+	background-position: center;
+}
+
+%overlay {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.35);
+}

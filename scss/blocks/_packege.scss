@@ -1,0 +1,87 @@
+.package {
+	display: flex;
+	flex-direction: column;
+
+	width: 300px;
+	padding: 40px 15px;
+
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 8px;
+
+	text-align: center;
+	color: #fff;
+
+		&__header {
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);		
+		}
+
+		&__title {
+			margin-bottom: 20px;
+
+			line-height: 1;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			
+			color: #B2B2B2;
+		}
+
+		&__price {
+			margin-bottom: 15px;
+
+			font-size: 80px;
+			line-height: 1;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+		}
+
+		&__period {
+			display: inline-block;
+			padding: 0 15px;
+			height: 24px;
+
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 30px;
+
+			font-size: 12px;
+
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			line-height: 24px;
+		}
+
+		&__list {
+			margin-bottom: 56px;
+			font-weight: 500;
+			line-height: 1;
+				
+				& li:not(:last-child) {
+							margin-bottom: 25px;
+						}
+		}
+		
+		&__btn {
+			margin-top: auto;
+		}
+
+	@media (max-width: 599px) {
+		width: 290px;
+	}
+}
+
+.package--special {
+	background-color: rgba(48, 79, 254, 0.95);
+
+	& .package {
+		&__title{
+			color: #fff;
+		}
+
+		&__period {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+
+	}
+}
