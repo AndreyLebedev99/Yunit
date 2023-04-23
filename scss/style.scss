@@ -15,6 +15,9 @@
 @import "./sections/footer";
 
 // Blocks
+@import "./blocks/nav";
+@import "./blocks/nav-icon";
+@import "./blocks/search";
 @import "./blocks/button-round";
 @import "./blocks/form";
 @import "./blocks/button";
@@ -25,6 +28,10 @@
 @import "./blocks/button-outline";
 @import "./blocks/button-solid";
 @import "./blocks/slider";
+
+//owlCarousel-theme
+@import "./owlCarousel-theme/theme.default";
+@import "./owlCarousel-theme/theme";
 
 // Media
 @import "./media/tablet";

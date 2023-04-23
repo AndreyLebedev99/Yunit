@@ -1,5 +1,6 @@
 .header { 
 	position: relative;
+	z-index: 999;
 	
 	@include bgImage("./../img/bg/header.jpg");
 
@@ -23,7 +24,7 @@
 				}
 
 				@media (max-width: 599px) {
-					padding-bottom: 40px;
+					padding-bottom: 41px;
 				}
 		}
 

@@ -22,7 +22,6 @@
 			}
 
 			@media (max-width: 599px) {
-				padding: 0;
 				flex-direction: column-reverse;
 				align-items: center;
 			}
@@ -32,6 +31,7 @@
 			width: 570px;
 
 			@media (max-width: 1199px) {
+				margin-top: 5px;
 				width: 715px;
 			}
 
@@ -105,7 +105,7 @@
 		}
 
 		@media (max-width: 1199px) {
-			padding: 50px 0 20px;
+			padding: 50px 0 23px;
 		}	
 
 		@media (max-width: 899px) {

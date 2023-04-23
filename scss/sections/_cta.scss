@@ -28,6 +28,10 @@
 				text-transform: uppercase;
 			}
 
+		@media (max-width: 1199px) {
+			margin-bottom: 38px;
+		}
+
 		@media (max-width: 899px) {
 			margin-bottom: 30px;
 			font-size: 20px;
@@ -37,15 +41,18 @@
 			margin-bottom: 18px;
 			font-size: 18px;
 		}
+
 	}
 
 	@media (max-width: 1199px) {
-		padding: 42px 0 39px
-	}	
-
-	@media (max-width: 899px) {
+		padding: 40px 0;
+		
 		.button {
 			width: 230px;
 		}
+	}	
+
+	@media (max-width: 599px) {
+		padding-bottom: 42px;
 	}
 }
